@@ -43,6 +43,10 @@ nav {
     background: black;
 }
 
+.anim-typewriter{
+    width: 100%;
+}
+
 .face-image{
     position: absolute;
     right: 10%;
