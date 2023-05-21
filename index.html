@@ -10,6 +10,9 @@
     <link href="https://fonts.cdnfonts.com/css/cocomat" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <div class="main">
@@ -39,9 +42,9 @@
             </div>
         </nav>
 
-        <div class="hero-text">
-            <h3 class="font-light text-[#ffff] letter-space">Hi! I am,</h3>
-            <h1 class="font-medium  uppercase text-[#ffff] letter-space">Samrat</h1>
+        <div class="hero-text sasfg">
+            <h3 class="font-light text-[#ffff] letter-space qwe">Hi! I am,</h3>
+            <h1 class="font-medium font-semibold uppercase text-[#ffff] letter-space">Samrat</h1>
             <h2 class="font-light text-[#a8a5a5] letter-space">The best front-end to your back-end</h2>
             <p class="text-[#ccc] text-lg text-justify">Code creator crafting captivating web experiences. Front-end developer fuelled by pixels and coffee. Turning designs into digital magic, one line of code at a time.</p>
         </div>
@@ -51,53 +54,132 @@
             <h1 class="text-white text-xl pt-5 text-center">"CSS is my favourite programming language"</h1>
         </div>
         <div class="hero_image">
+            <div class="cover"></div>
             <img src="/static/hero-image-6.jpg" alt="" srcset="">
         </div>
 
-        <div class="about">
-            <h1 class="text-6xl text-[#fff] font-semibold text-center pt-12 pb-14">About Me</h1>
+        <div class="about pb-24">
+            <h1 class="text-6xl text-[#fff] font-semibold text-center pt-12 pb-14">About   <span class=" font-light p-3">Me</span></h1>
 
             <div class="grid-2">
                 <div class="ab-image">
                     <img src="/static/face.jpg" alt="">
                 </div>
                 <div class="ab-text">
-                    <h1 class="text-[#ccc]">Me,</h1>
-                    <p></p>
+                    <h1 class="text-[#f7ca48] font-light ">Me,</h1>
+                    <p class="text-[#ccc] text-lg font-light text-left pt-5">I'm a front-end software engineer with a passion for continuous learning. With a specialization in front-end engineering, I strive to create intuitive and visually appealing user experiences. I believe that technology is constantly evolving, and I'm dedicated to staying up-to-date with the latest industry trends and techniques. I aim to share my knowledge, insights, and projects to inspire and empower fellow developers.</p>
+                </div>
+            </div>
+            <h2 class="text-center text-[#fff] text-xl pt-12">Fluent In</h2>
+            <div class="icons">
+                <div class="icon-el"><img src="/static/html-5.png" alt=""></div>
+                <div class="icon-el"><img src="/static/css.png" alt=""></div>
+                <div class="icon-el"><img src="/static/js.png" alt=""></div>
+                <div class="icon-el"><img src="/static/python.png" alt=""></div>
+                <div class="icon-el"><img src="/static/react.png" alt=""></div>
+                <div class="icon-el"><img src="/static/tailwind.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="experience pb-14">
+            <h1 class="text-6xl font-semibold text-center mt-12 mb-16"><span class="font-light p-3">My</span>Experiences</h1>
+            <ul>
+                <li style="--accent-color:#41516C">
+                    <div class="date">Jan 2023 - Present</div>
+                    <div class="title">Fellow</div>
+                    <div class="descr">Working as Fellow for the Software Club at DWIT as a Front-End Developer. Built the website and managing it</div>
+                </li>
+                <li style="--accent-color:#FBCA3E">
+                    <div class="date">Mar 2023 - Present</div>
+                    <div class="title">Intern</div>
+                    <div class="descr">Working as a Data Entry Intern at Deerhold Ltd. Completed provided works at a fast pace using practical approaches</div>
+                </li>
+                <li style="--accent-color:#E24A68">
+                    <div class="date">Feb 2023 - Mar 2023</div>
+                    <div class="title">Intern</div>
+                    <div class="descr">Worked as a Data Entry Clerk at HamroPay (Sister Organisation of HamroPatro)</div>
+                </li>
+                <li style="--accent-color:#1B5F8C">
+                    <div class="date">Jan 2022 - Feb 2022</div>
+                    <div class="title">Teaching Assistant</div>
+                    <div class="descr">Worked as an assistant for a UI/UX developer Instructor to Junior Year Highschool Students</div>
+                </li>
+                <li style="--accent-color:#4CADAD">
+                    <div class="date">Mar 2021 - Mar 2022</div>
+                    <div class="title">Software Club President</div>
+                    <div class="descr">Served as the President of the DSS Software Club during my Junior and Senior Years of Highschool</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="projects pt-12 pb-32">
+            <h1 class="text-6xl font-semibold text-center pb-16 text-[#fff]"><span class="font-light p-3">My</span> Projects</h1>
+
+            <div class="grid-3">
+                <div class="project">
+                    <img src="/static/minerva.png" alt="">
+                    <h1>Minerva</h1>
+                    <p class="p-2">Minerva is an open source platform for people to learn valuable skills. It is a platform dedicated to anyone with a will to learn.</p>
+                </div>
+                <div class="project">
+                    <img src="/static/hero-image.svg" style="background: #001E1D;" alt="">
+                    <h1>Software</h1>
+                    <p class="p-2">A web app developed for the DWIT Software Club. This app has admin features as well as appealing client side design and is used for doocumenting, announcing and establishing the existence of the club</p>
+                </div>
+                <div class="project">
+                    <img src="/static/deerhack.webp"  alt="">
+                    <h1>DeerHack</h1>
+                    <p class="p-2">Deer Hack 2023 is the brainchild of a small
+                        team to unleash the potential of young IT
+                        minds innovators through a 48-hour
+                        hackathon in which developers, designers,
+                        students, entrepreneurs, educators, and
+                        mentors collaborate to create solutions that
+                        tackle real-world problems. </p>
                 </div>
             </div>
         </div>
 
-        <div class="experience">
-            <h1>UL timeline cards</h1>
-            <ul>
-                <li style="--accent-color:#41516C">
-                    <div class="date">2002</div>
-                    <div class="title">Title 1</div>
-                    <div class="descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas itaque hic quibusdam fugiat est numquam harum, accusamus suscipit consequatur laboriosam!</div>
-                </li>
-                <li style="--accent-color:#FBCA3E">
-                    <div class="date">2007</div>
-                    <div class="title">Title 2</div>
-                    <div class="descr">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos adipisci nobis nostrum vero nihil veniam.</div>
-                </li>
-                <li style="--accent-color:#E24A68">
-                    <div class="date">2012</div>
-                    <div class="title">Title 3</div>
-                    <div class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga minima consequuntur soluta placeat iure totam commodi repellendus ea delectus, libero fugit quod reprehenderit, sequi quo, et dolorum saepe nulla hic.</div>
-                </li>
-                <li style="--accent-color:#1B5F8C">
-                    <div class="date">2017</div>
-                    <div class="title">Title 4</div>
-                    <div class="descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, cumque.</div>
-                </li>
-                <li style="--accent-color:#4CADAD">
-                    <div class="date">2022</div>
-                    <div class="title">Title 5</div>
-                    <div class="descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, non.</div>
-                </li>
-            </ul>
+        <div class="contact pt-12 pb-14">
+            <h1 class="text-6xl text-center font-light">Get in <span class="font-bold">Touch</span></h1>
+
+            <div class="grid-2 con-form mt-24">
+                <div class="form">
+                    <h1 class="text-3xl text-[#ccc] mb-12">Contact Me</h1>
+                    <form action="">
+                        <div>
+                            <input type="text" placeholder="Name*" id="name" required/>
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Email*" name="" id="email" required/>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Phone" id="phone-number"/>
+                        </div>
+                        <div>
+                            <textarea name="" placeholder="Message*" id="message" cols="30" rows="8"></textarea>
+                        </div>
+
+                        <div class="button mt-12">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="details">
+                    <h1 class="text-3xl text-[#ccc] mb-12">Contact Details</h1>
+
+                    <h3 class="text-[#8BAC5C]">Email</h3>
+                    <p class="text-black">samratnakarmi1@gmail.com</p>
+                    <h3 class="text-[#8BAC5C]">Phone</h3>
+                    <p>+977-981-825-1660</p>
+                    <h3 class="text-[#8BAC5C]">Address</h3>
+                    <p>Maitidevi, Kathmandu <br>Nepal</p>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="/script/script.js"></script>
+    <script src="/script/validation.js"></script>
 </body>
 </html>
