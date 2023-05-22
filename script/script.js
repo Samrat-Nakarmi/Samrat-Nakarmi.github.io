@@ -11,7 +11,7 @@ const t9 = gsap.timeline({
         start:"-100px center",
         end:"bottom center",
         duration: 2,
-        markers: true,
+        markers: false,
         }
 }).fromTo('.sasfg', {y:"20%", opacity:0}, {y:0,opacity:1})
 
@@ -21,7 +21,7 @@ const t10 = gsap.timeline({
         start:"140px center",
         end:"bottom center",
         duration: 2,
-        markers: true,
+        markers: false,
         }
 }).fromTo('.sasfgh', {y:"20%", opacity:0}, {y:0,opacity:1})
 
@@ -31,7 +31,7 @@ const t11 = gsap.timeline({
         start:"160px center",
         end:"bottom center",
         duration: 2,
-        markers: true,
+        markers: false,
         }
 }).fromTo('.sas', {y:"20%", opacity:0}, {y:0,opacity:1})
 
@@ -41,7 +41,7 @@ const t12 = gsap.timeline({
         start:"500px center",
         end:"bottom center",
         duration: 2,
-        markers: true,
+        markers: false,
         }
 }).fromTo('.sussy', {y:"20%", opacity:0}, {y:0,opacity:1})
 
@@ -51,7 +51,7 @@ const t13 = gsap.timeline({
         start:"100px center",
         end:"bottom center",
         duration: 2,
-        markers: true,
+        markers: false,
         }
 }).fromTo('.sussy1', {x: -110, opacity:0}, {x:0,opacity:1})
 
@@ -61,7 +61,7 @@ const t14 = gsap.timeline({
         start:"200 center",
         end:"bottom center",
         duration: 2,
-        markers: true,
+        markers: false,
         }
 }).fromTo('.sussy2', {x: 110, opacity:0}, {x:0,opacity:1})
 
@@ -71,7 +71,7 @@ const t15 = gsap.timeline({
         start:"350 center",
         end:"bottom center",
         duration: 2,
-        markers: true,
+        markers: false,
         }
 }).fromTo('.sussy3', {x: -110, opacity:0}, {x:0,opacity:1})
 
@@ -81,7 +81,7 @@ const t16 = gsap.timeline({
         start:"450 center",
         end:"bottom center",
         duration: 2,
-        markers: true,
+        markers: false,
         }
 }).fromTo('.sussy4', {x: 110, opacity:0}, {x:0,opacity:1})
 
@@ -91,7 +91,7 @@ const t17 = gsap.timeline({
         start:"500 center",
         end:"bottom center",
         duration: 2,
-        markers: true,
+        markers: false,
         }
 }).fromTo('.sussy5', {x: -110, opacity:0}, {x:0,opacity:1})
 
@@ -101,7 +101,7 @@ const t18 = gsap.timeline({
         start:"600 center",
         end:"bottom center",
         duration: 2,
-        markers: true,
+        markers: false,
         }
 }).fromTo('.qqq', {y: 110, opacity:0}, {y:0,opacity:1})
 
@@ -111,7 +111,7 @@ const t19 = gsap.timeline({
         start:"700 center",
         end:"bottom center",
         duration: 2,
-        markers: true,
+        markers: false,
         }
 }).fromTo('.qqq1', {y: 110, opacity:0}, {y:0,opacity:1})
 
@@ -121,7 +121,7 @@ const t20 = gsap.timeline({
         start:"700 center",
         end:"bottom center",
         duration: 2,
-        markers: true,
+        markers: false,
         }
 }).fromTo('.qqq1', {y: 110, opacity:0}, {y:0,opacity:1})
 
@@ -131,7 +131,7 @@ const t21 = gsap.timeline({
         start:"800 center",
         end:"bottom center",
         duration: 2,
-        markers: true,
+        markers: false,
         }
 }).fromTo('.qqq1', {y: 110, opacity:0}, {y:0,opacity:1})
 
@@ -141,6 +141,6 @@ const t22 = gsap.timeline({
         start:"200 center",
         end:"bottom center",
         duration: 2,
-        markers: true,
+        markers: false,
         }
 }).fromTo('.lool', {x: 110, opacity:0}, {x:0,opacity:1})
