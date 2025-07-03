@@ -45,7 +45,7 @@ export function HeroSection() {
             <span className="font-semibold text-green-600 dark:text-green-400"> people</span> in mind.
           </motion.p>
 
-          <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 justify-center">
+          {/* <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="group">
               View My Work
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -54,7 +54,7 @@ export function HeroSection() {
               <Mail className="mr-2 h-4 w-4" />
               Get In Touch
             </Button>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>
