@@ -1,8 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, Mail } from "lucide-react"
-import { Button } from "@/components/ui/button"
+// import { ArrowRight, Mail } from "lucide-react"
+// import { Button } from "@/components/ui/button"
 import { fadeInUp, staggerContainer } from "@/lib/animations"
 
 export function HeroSection() {
